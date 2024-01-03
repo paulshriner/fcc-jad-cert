@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+    padding-top: 39vh;
+}
+
+main input, #results-div {
+    margin-top: 2vh;
+}
+
+button {
+    margin-top: 2vh;
+    padding: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#results-div p {
+    margin-bottom: 1vh;
+}
