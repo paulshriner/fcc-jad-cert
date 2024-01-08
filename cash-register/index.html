@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Cash Register</h1>
+    <form onsubmit="calculateChange(); return false;">
+        <label for="cash">Enter cash for customer:</label><br>
+        <!-- Thanks https://stackoverflow.com/questions/19011861/is-there-a-float-input-type-in-html5 for min and step -->
+        <input type="number" name="cash" id="cash" min="0" step="0.01"/><br>
+        <button type="submit" id="purchase-button">Purchase!</button>
+    </form>
+    <div id="change-due"></div>
+    <div id="current-cid">
+        <p id="total"></p>
+        <p id="cid-heading">Change in drawer:</p>
+        <p id="cid-penny"></p>
+        <p id="cid-nickel"></p>
+        <p id="cid-dime"></p>
+        <p id="cid-quarter"></p>
+        <p id="cid-one"></p>
+        <p id="cid-five"></p>
+        <p id="cid-ten"></p>
+        <p id="cid-twenty"></p>
+        <p id="cid-onehundred"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
