@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding-top: 30vh;
+}
+
+h1, form {
+    padding-bottom: 5vh;
+}
+
+#cash, #purchase-btn {
+    margin-top: 1vh;
+}
+
+#change-due {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}

@@ -24,6 +24,7 @@ const cidTen = document.getElementById("cid-ten");
 const cidTwenty = document.getElementById("cid-twenty");
 const cidOneHundred = document.getElementById("cid-onehundred");
 const changeDue = document.getElementById("change-due");
+const submitButton = document.getElementById("purchase-btn");
 
 // Price and cid, can change these for testing
 let price = 19.5;
@@ -90,7 +91,9 @@ const calculateChange = () => {
     ];
     
     // Check if customer has enough change
-    if (cash.valueAsNumber < price) {
+    if (isNaN(cash.valueAsNumber)) {
+        alert("You must enter a number");
+    } else if (cash.valueAsNumber < price) {
         alert("Customer does not have enough money to purchase the item");
         return;
     } else if (cash.valueAsNumber === price) {
@@ -129,14 +132,23 @@ const calculateChange = () => {
     changeDue.innerHTML = `<p>${result[0][0]}: ${result[0][1]}</p>`;
     if (result[0][1] !== "INSUFFICIENT_FUNDS") {
         for (let i = result.length - 1; i >= 0; --i) {
-            if (result[i][1] > 0) {
-                changeDue.innerHTML += `<p>${result[i][0]}: ${result[i][1]}</p>`
+            if (amounts[i - 1][1] <= cash.valueAsNumber - price) {
+                changeDue.innerHTML += `<p>${result[i][0]}: $${result[i][1]}</p>`
             }
         }
     }
 
     updateCid();
 }
+
+//Event Handlers
+submitButton.addEventListener("click", calculateChange);
+cash.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        calculateChange();
+    }
+});
 
 // Initial values when page first loads
 total.textContent = `Total: $${price}`;
