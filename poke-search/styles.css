@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* According to the Pixabay Content License here: https://pixabay.com/service/license-summary/, this image is fine to use in this case */
+    background: url("https://cdn.pixabay.com/photo/2016/08/14/14/58/pokemon-1593048_960_720.jpg");
+}
+
+header {
+    margin: 2em auto;
+    background-color: darkslategray;
+    width: 200px;
+}
+
+header, form {
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: darkslategray;
+    width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+form input {
+    padding: 10px;
+}
+
+form button {
+    width: 5em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+#pokemon-main-card {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 300px;
+    margin: 1em auto;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#types {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    color: black;
+}
+
+#types p {
+    background-color: lightgray;
+    margin: 1em;
+}
+
+#pokemon-main-card img {
+    height: 200px;
+    width: 200px;
+}
+
+#pokemon-stats {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#pokemon-stats p, #pokemon-stats div {
+    background-color: lightgray;
+    margin: 0.3em;
+    padding: 0.3em;
+}
+
+#pokemon-stats div > p {
+    margin: 0;
+}

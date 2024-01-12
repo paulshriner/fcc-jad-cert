@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéSearch</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- Thanks https://www.favicon.cc/?action=icon&file_id=977940 for the favicon -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAExMUAAgICAAACP8A9/f3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAIkQiAAAAAAJEREQgAAAAJEREREIAAAJERERERCAAAkREREREIAAkREQiRERCACIiIkQiIiIAIzMzETMzMgACMzMzMzMgAAIzMzMzMyAAACMzMzMyAAAAAjMzMyAAAAAAIjMiAAAAAAAAIgAAAAAAAAAAAAAAD+fwAA+B8AAPAPAADgBwAAwAMAAMADAACAAQAAgAEAAIABAADAAwAAwAMAAOAHAADwDwAA+B8AAP5/AAD//wAA" rel="icon" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -12,23 +14,32 @@
     </header>
     <main>
         <form>
-            <label for="search-input">Enter a Pokémon name or ID here:</label>
-            <input id="search-input" name="search-input" />
-            <button type="buton" id="search-button">Search</button>
+            <label for="search-input">Enter a Pokémon name or ID here:</label><br><br>
+            <input id="search-input" name="search-input" required/>
+            <button type="button" id="search-button">Search</button>
         </form>
         <div id="pokemon-main-card">
             <div id="pokemon-name"></div>
             <div id="pokemon-id"></div>
             <div id="weight"></div>
             <div id="height"></div>
+            <div id="image"></div><br>
             <div id="types"></div>
         </div>
         <div id="pokemon-stats">
+            <div><p>Base</p></div>
+            <div><p>Stats</p></div>
+            <div><p>HP:</p></div>
             <div id="hp"></div>
+            <div><p>Attack:</p></div>
             <div id="attack"></div>
+            <div><p>Defense:</p></div>
             <div id="defense"></div>
+            <div><p>Sp. Attack:</p></div>
             <div id="special-attack"></div>
+            <div><p>Sp. Defense:</p></div>
             <div id="special-defense"></div>
+            <div><p>Speed:</p></div>
             <div id="speed"></div>
         </div>
     </main>
