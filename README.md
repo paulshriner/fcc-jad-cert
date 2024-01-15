@@ -14,4 +14,11 @@ These are the projects I did in the completion of this certificate.
 
         A page that checks if a phone number is valid according to typical U.S. phone number formats.
 
+* Cash Register
+
+        A simulation of a cash register. Add initial values for price and cid, then enter customer's cash on the website.
+
+* Pokémon Search App (PokéSearch)
+
+        Retrieves pokémon information from fCC's API and returns it to the user.
 
