@@ -22,3 +22,5 @@ These are the projects I did in the completion of this certificate.
 
         Retrieves pokémon information from fCC's API and returns it to the user.
 
+[Here](https://www.freecodecamp.org/certification/fcc30aca8b2-d2c4-4009-a397-2e6d1ecbde3b/javascript-algorithms-and-data-structures-v8) is my certificate on freeCodeCamp.
+
