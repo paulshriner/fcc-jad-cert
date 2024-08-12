@@ -28,17 +28,7 @@ const submitButton = document.getElementById("purchase-btn");
 
 // Price and cid, can change these for testing
 let price = 19.5;
-let cid = [
-    ["PENNY", 0.5], 
-    ["NICKEL", 0], 
-    ["DIME", 0], 
-    ["QUARTER", 0], 
-    ["ONE", 0], 
-    ["FIVE", 0], 
-    ["TEN", 0], 
-    ["TWENTY", 0], 
-    ["ONE HUNDRED", 0]
-];
+let cid = [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]];
 
 // Updates cid values on the page
 const updateCid = () => {
@@ -132,7 +122,7 @@ const calculateChange = () => {
     changeDue.innerHTML = `<p>${result[0][0]}: ${result[0][1]}</p>`;
     if (result[0][1] !== "INSUFFICIENT_FUNDS") {
         for (let i = result.length - 1; i >= 0; --i) {
-            if (amounts[i - 1][1] <= cash.valueAsNumber - price) {
+            if (amounts[i - 1][1] <= cash.valueAsNumber - price && result[i][1] !== 0.00) {
                 changeDue.innerHTML += `<p>${result[i][0]}: $${result[i][1]}</p>`
             }
         }
