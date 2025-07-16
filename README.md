@@ -10,21 +10,31 @@ These are the projects I did in the completion of this certificate.
 
 A page to check if a given input string is a palindrome (expression that is the same forward and backward).
 
+![Image of Project](images/palindrome-checker.png)
+
 ### Roman Numeral Converter
        
 A page that converts a decimal number input to its roman numeral counterpart.
+
+![Image of Project](images/roman-num-converter.png)
 
 ### Phone Number Validator
 
 A page that checks if a phone number is valid according to typical U.S. phone number formats.
 
+![Image of Project](images/phone-num-validator.png)
+
 ### Cash Register
 
 A simulation of a cash register. Add initial values for price and cid, then enter customer's cash on the website.
 
+![Image of Project](images/cash-register.png)
+
 ### Pokémon Search App (PokéSearch)
 
 Retrieves pokémon information from fCC's API and returns it to the user.
+
+![Image of Project](images/poke-search.png)
 
 ## Skills
 - HTML
